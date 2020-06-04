@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreenActivity"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/headstrip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/title_bar">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sckcurrentaffairs" />
+        <ImageView
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/title_bar"
+        android:id="@+id/welcome_bar"
+        android:gravity="center"
+        android:background="@drawable/image_welcome" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome_image"
+            android:src="@drawable/welcome_image"
+            android:padding="20dp"
+            />
+        <TextView
+            android:layout_below="@+id/welcome_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_bar"
+        android:id="@+id/notifications_linear_layout"
+        android:gravity="center"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:src="@drawable/notifications" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notifications_linear_layout"
+        android:id="@+id/current_affairs_linear_layout"
+        android:gravity="center"
+        android:background="@color/black">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/current_affairs"
+            android:src="@drawable/current_affairs"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_affairs_linear_layout"
+        android:id="@+id/static_gk_linear_layout"
+        android:gravity="center"
+        android:background="@color/btn_register">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/static_gk"
+            android:src="@drawable/static_gk"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/static_gk_linear_layout"
+        android:id="@+id/vocabulary_linear_layout"
+        android:gravity="center"
+        android:background="@color/light_blue">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vocabulary"
+            android:src="@drawable/vocabulary"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentAffairsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/headstrip"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/title_bar">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sckcurrentaffairs" />
+        <ImageView
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:id="@+id/current_affairs_linear_layout"
+        android:gravity="center"
+        android:background="@color/black">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/current_affairs"
+            android:src="@drawable/current_affairs"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+    //  scroll view
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/current_affairs_linear_layout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/notification1"
+                android:layout_margin="15dp"
+                android:background="@drawable/shadow"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Daily"
+                    android:id="@+id/daily"
+                    android:textSize="25dp"
+                    android:padding="10dp"
+                    android:textColor="@color/dark_blue"
+                    android:gravity="center"
+                    android:background="@drawable/option"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/notification2"
+                android:layout_below="@+id/notification1"
+                android:layout_margin="15dp"
+                android:background="@drawable/shadow"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Weekly"
+                    android:id="@+id/weekly"
+                    android:textSize="25dp"
+                    android:padding="10dp"
+                    android:textColor="@color/dark_blue"
+                    android:gravity="center"
+                    android:background="@drawable/option"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/notification3"
+                android:layout_below="@+id/notification2"
+                android:layout_margin="15dp"
+                android:background="@drawable/shadow"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Monthly"
+                    android:id="@+id/monthly"
+                    android:textSize="25dp"
+                    android:padding="10dp"
+                    android:textColor="@color/dark_blue"
+                    android:gravity="center"
+                    android:background="@drawable/option"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
